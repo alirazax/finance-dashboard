@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        color: white;
+      }
+      .box {
+        display: flex;
+        margin: 20px;
+        gap: 2%;
+        padding: 100px;
+      }
+
+      .card {
+        background-color: rgba(34, 34, 33, 1);
+        border-radius: 20px;
+
+        font-family: "Roboto", sans-serif;
+        padding: 10px;
+      }
+      .blackbox-left {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 0px 20px;
+      }
+      select {
+        font-size: 20px;
+        border-radius: 30px;
+        border: 1px solid white;
+        background-color: black;
+        padding: 5px;
+        color: rgba(177, 177, 177, 1);
+      }
+      form {
+        color: rgba(177, 177, 177, 1);
+      }
+      .rightbox {
+        width: 49%;
+        background-color: #03030c;
+        opacity: 0.8;
+        background: repeating-linear-gradient(
+          -45deg,
+          /* Angle of the lines */ white,
+          /* First color (thin white line) */ white 2px,
+          /* White line ends at 2px */ black 2px,
+          /* Black background starts at 2px */ black 10px
+            /* Black background extends to 10px */
+        );
+      }
+      .visitors {
+        display: flex;
+        justify-content: space-between;
+      }
+      .visitors-right {
+        display: flex;
+        margin-top: 140px;
+        margin-left: 20px;
+        gap: 8px;
+      }
+      .nov-sep {
+        display: flex;
+        gap: 10px;
+        margin: 30px 20px 20px 0px;
+      }
+      .november {
+        width: 150px;
+        height: 200px;
+        border-radius: 20px;
+
+        background: repeating-linear-gradient(
+          -130deg,
+          #2e2b2b,
+          #2e2b2b,
+          1px,
+          rgba(34, 34, 33, 1) 1px,
+          rgba(34, 34, 33, 1) 4px
+        );
+      }
+
+      .september {
+        width: 150px;
+        height: 200px;
+
+        border-radius: 20px;
+
+        background: repeating-linear-gradient(
+          -130deg,
+          #2e2b2b,
+          #2e2b2b,
+          1px,
+          rgba(34, 34, 33, 1) 1px,
+          rgba(34, 34, 33, 1) 4px
+        );
+      }
+      .September-box {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(164, 245, 164, 1);
+        border-radius: 20px;
+        margin-top: 81px;
+      }
+      .november-box {
+        width: 100%;
+        height: 160px;
+        background-color: rgba(164, 245, 164, 1);
+        border-radius: 20px;
+        margin-top: 21px;
+      }
+      .september-minibox {
+        width: 100%;
+        height: 60px;
+        background-color: rgba(179, 161, 255, 1);
+        border-radius: 20px;
+        position: relative;
+        top: 40px;
+      }
+      .november-minibox {
+        width: 100%;
+        height: 40px;
+        background-color: rgba(179, 161, 255, 1);
+        border-radius: 20px;
+        position: relative;
+        top: 120px;
+      }
+      .leftcard-two {
+        background-color: #edf1ed;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 20px;
+      }
+      .arrow {
+        display: flex;
+        gap: 3px;
+      }
+      .current-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .below-curretbalance {
+        background-color: #a4f5a4;
+
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .average {
+        display: flex;
+        gap: 4px;
+        margin-top: 95px;
+        /* justify-content: center; */
+        align-items: center;
+      }
+      .flexround {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .round {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <!--this is my main box of the body in which twi main div with the name of left-box , right-box-->
+    <div class="box">
+      <div class="leftbox">
+        <div class="card">
+          <div class="blackbox-left">
+            <h1>Sales statistics</h1>
+            <form action="/action_page.php">
+              <select name="month" id="month">
+                <option value="">Monthly</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+            </form>
+          </div>
+          <p style="margin: 1px 0px 0px 20px; color: rgba(122, 122, 121, 1)">
+            updated 1 day ago
+          </p>
+          <div class="visitors">
+            <div class="visitors-right">
+              <p style="color: rgba(122, 122, 121, 1)">
+                Visitors <br />
+                <br />
+                <span style="font-size: 50px">2,025</span>
+              </p>
+              <div>
+                <div
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50px;
+                    background-color: rgba(164, 245, 164, 1);
+                    display: flex;
+                    margin-left: -60px;
+                    margin-top: -3px;
+
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-arrow-up-right"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- this is the part in which one main div name nov-sep and there is two div incide with the name november, september-->
+            <div class="nov-sep">
+              <div class="september">
+                <p
+                  style="
+                    margin: 2px 0px 0px 10px;
+                    color: rgba(177, 177, 177, 1);
+                  "
+                >
+                  September
+                </p>
+                <div class="September-box">
+                  <div class="september-minibox"></div>
+                </div>
+              </div>
+              <div class="november">
+                <p
+                  style="
+                    margin: 2px 0px 0px 10px;
+                    color: rgba(177, 177, 177, 1);
+                  "
+                >
+                  November
+                </p>
+                <div class="november-box">
+                  <div class="november-minibox"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--this seconfd div of leftside in which current balane and arrow work -->
+        <div class="leftcard-two" style="color: black">
+          <div class="current-box">
+            <p style="color: #2e2b2b">Current balance</p>
+            <div class="arrow">
+              <div>
+                <span
+                  style="
+                    padding: 3px 4px 4px 4px;
+                    border-radius: 50px;
+                    color: black;
+                    background-color: #edf1ed;
+                    border: 1px solid black;
+                  "
+                  >&#8592;</span
+                >
+              </div>
+              <div>
+                <div>
+                  <span
+                    style="
+                      padding: 3px 4px 4px 4px;
+                      border-radius: 50px;
+                      color: black;
+                      background-color: #edf1ed;
+                      border: 1px solid black;
+                    "
+                    >&#8594;</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--this div is under the current-box -->
+          <div class="below-curretbalance">
+            <div
+              style="
+                background-color: white;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+              "
+            >
+              <div
+                style="
+                  width: 20px;
+                  height: 20px;
+                  background-color: white;
+                  border-radius: 5px;
+                  /* padding: 5px; */
+                  border: 1px;
+                  border-style: solid;
+                  border-color: rgb(0, 0, 0);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-trending-up"
+                >
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                  <polyline points="17 6 23 6 23 12" />
+                </svg>
+              </div>
+            </div>
+            <!--14% combine div average score plus round shape-->
+
+            <div class="flexround">
+              <div>
+                <div class="average">
+                  <p style="color: black; font-size: 21px">14%</p>
+                  <div
+                    style="
+                      width: 15px;
+                      height: 15px;
+                      background-color: white;
+                      border-radius: 30px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-arrow-up-right"
+                    >
+                      <line x1="7" y1="17" x2="17" y2="7" />
+                      <polyline points="7 7 17 7 17 17" />
+                    </svg>
+                  </div>
+                </div>
+                <p style="color: #545754; font-size: x-small">
+                  Average scale:18,346$
+                </p>
+              </div>
+              <div class="round">
+                <img src="ROUND.svg" alt="" />
+                <div
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 67px;
+                    right: 100px;
+                    border-radius: 20px;
+                    background-color: #b3a1ff;
+                    border: 1px solid black;
+                  "
+                ></div>
+                <img
+                  style="position: absolute; top: 60px; right: 95px"
+                  src="roundupp.svg"
+                  alt=""
+                />
+                <p
+                  style="
+                    position: absolute;
+                    top: 100px;
+                    left: 67px;
+                    color: black;
+                    font-size: 25px;
+                  "
+                >
+                  15,368$
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightbox"></div>
+    </div>
+  </body>
+</html>
